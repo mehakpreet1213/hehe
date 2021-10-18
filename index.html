@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     
+      <a-sky src="8k_stars_milky_way.jpg"></a-sky>
+
+      <a-entity>
+      <a-sphere position="0 2.5 -5" src="8k_sun.jpg" radius="2"></a-sphere>
+      </a-entity>
+      <!-- Mercury -->
+      <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 25000">
+        <a-sphere position="4 2.5 -5" src="2k_mercury.jpg" radius="0.5"></a-sphere>
+        </a-entity> 
+
+
+<!-- venus -->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 28000">
+          <a-sphere position="8 2.5 -5" src="2k_venus_surface.jpg" radius="0.5"></a-sphere>
+          </a-entity> 
+          <!-- earth -->
+          <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 38000">
+            <a-sphere position="12 2.5 -5" src="8k_earth_daymap.jpg" radius="0.5"></a-sphere>
+            </a-entity> 
+            <!-- mars -->
+            <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 34000">
+              <a-sphere position="16 2.5 -5" src="8k_mars.jpg" radius="0.5"></a-sphere>
+              </a-entity> 
+              <!-- jupiter -->
+              <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 10000">
+                <a-sphere position="20 2.5 -5" src="2k_jupiter.jpg" radius="0.5"></a-sphere>
+                </a-entity> 
+                <!-- saturn -->
+                <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 18000">
+                  <a-sphere position="24 2.5 -5" src="2k_saturn.jpg" radius="0.5"></a-sphere>
+                  </a-entity> 
+          <!-- uranus -->
+                  <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 38000">
+                    <a-sphere position="28 2.5 -5" src="2k_uranus.jpg" radius="0.5"></a-sphere>
+                    </a-entity> 
+<!-- neptune -->
+                    <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 20000">
+                      <a-sphere position="32 2.5 -5" src="2k_neptune.jpg" radius="0.5"></a-sphere>
+                      </a-entity> 
+
+
+
+                      <a-torus position= "-10 2 0" color="grey" arc=360 radius="5" rotation="90 0 0" radius-tubular="0.1" segments-tubular="1000"></a-torus>
+
+
+              
+    </a-scene>
+  </body>
+</html>
